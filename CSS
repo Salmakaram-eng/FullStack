@@ -1,0 +1,52 @@
+CSS -> Cascading Style Sheet
+-------------------
+|Attribute : value|
+|-----------------|
+
+Inline code example:
+<html style = "background: blue"></html>
+
+Internal code example:
+<html>
+     <head>
+          <style>
+                h1{
+                  color: red;
+                }
+         </style>
+    </head>
+</html>
+
+External code example:
+ in index.html :
+  <link rel="stylesheet" href="./style.css"/>
+ in style.css : 
+  h1{
+      color: green;
+  }
+------------------------------------------------------
+
+. CSS selectors
+  1. Class selector -> for many elements
+     in index.html : <h2 class = "red-text">Red</h2>
+     in style.css  : .red-text{ .. }
+  2. ID selector -> for one element (both class and id can do the same but for better practicing use id for one unique element)
+     in index.html : <h2 id = "red-text">Red</h2>
+     in style.css  : #red-text{ .. }
+  3. Attribute selector -> element + attribute condition
+     in index.html : <p value="4">Red</p>
+     in style.css  : p[value="4"]{ .. }
+  4. Universal selector -> for all elements 
+     in index.html : <h2>Red</h2>
+     in style.css  : *{ .. }
+------------------------------------------------------
+
+. Color properties
+-------------------
+|Property : value |
+|-----------------|
+color
+font-size
+font-weight
+text-align
+------------------------------------------------------
